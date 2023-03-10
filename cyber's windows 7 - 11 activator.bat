@@ -18,7 +18,7 @@ cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
 
 cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully" && (echo.& echo ====================================== & echo. & choice /n /c YN /m "Would you like to visit my youtube channel[Y,N]?" & if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
 
-explorer "https://www.youtube.com/channel/UCW8YSn88Wrsef5ckgh6stdg"&goto halt
+explorer "https://www.youtube.com/@cyber.23/featured"&goto halt
 
 :notsupported
 
